@@ -1,5 +1,5 @@
-console.log("Hello from args file!");
-console.log(process.argv);
+// console.log("Hello from args file!");
+// console.log(process.argv);
 
 
 // const counter = function(arr) {

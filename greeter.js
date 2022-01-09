@@ -3,4 +3,8 @@ for (let arg of args) {
     console.log(`Hi there, ${arg}`);
 }
 
-node boilerplate.js PromiseRejectionEvent;
+node boilerplate.js Project
+
+Project
+index.html
+app.js
