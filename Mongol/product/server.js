@@ -5,14 +5,10 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost:27017/farmStand')
-.then(() => {
-    console.log('Connection open!')
-})
-.catch((err) => {
-    console.log('oh no mongo error!')
-    console.log(err)
-})
+// Load the "secrets" in the .env file
+require('dotenv').config();
+// Connect to the MongoDB database
+require('./config/database');
 
 var indexRouter = require('./routes/index');
 var productsRouter = require('./routes/products');
